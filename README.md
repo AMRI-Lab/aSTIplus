@@ -26,5 +26,8 @@ This repository contains implementations of Fc-aSTI model for simulated data and
 Once the above steps are completed, you can run STIrecon.m script to reconstruct susceptibility tensor
 
 # Simulation experiments
-you can run simulation_demo.m script to conduct simulation experiments, including:  
-(1)generate simualted phase data with different noise level; (2)calculate the morphology mask from the smoothed QSM image; (3)reconstruct STI using aSTI+ method; (4)calculate quantitative metrics.
+you can run simulation_demo.m script to conduct simulation experiments, including:    
+(1)generate simualted phase data with different noise level;  
+(2)calculate the morphology mask from the smoothed QSM image;  
+(3)reconstruct STI using aSTI+ method;  
+(4)calculate quantitative metrics.
