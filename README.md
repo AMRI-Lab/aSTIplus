@@ -5,6 +5,11 @@ ASTI+ improves in vivo STI reconstruction by relaxing the symmetry constraint, a
 
 This repository contains implementations of Fc-aSTI model for simulated data and in vivo human brain data.
 
+# Required Dependencies
+1. STI_Suite V3.0 toolbox
+2. Nifti toolbox
+3. FSL software
+
 # File Descriptions
 1. simulation_data: this folder constains the ground truth of simulation experiments.
 2. utils: this folder contains the source code to reconstruct aSTI+ model. including:  
