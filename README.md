@@ -3,14 +3,19 @@ ASTI+ is a new proposed STI reconstruction method for human brain in vivo.
 
 ASTI+ improves in vivo STI reconstruction by relaxing the symmetry constraint, adding isotropic susceptibility regularization to CSF region and morphology constraint to white matter region.
 
-
-
 This repository contains implementations of Fc-aSTI model for simulated data and in vivo human brain data.
 
 # File Descriptions
 1. simulation_data: this folder constains the ground truth of simulation experiments.
 2. utils: this folder contains the source code to reconstruct aSTI+ model. including:
-(1)
+(1)aSTIplus.m: the function of the aSTI+ model
+(2)compute_metrics.m: the function to calculate quantitative evaluation metrics including PSNR, SSIM in MSA and MMS as well as mean angular error in white matter
+(3)gradient_mask_all.m: the function to generate the morpology mask
+(4)simulate_phase.m: the function to simulate phase data with different noise level from the ground truth susceptibility tensor
+(5)simulation_demo.m: the script of the whole process of simulation experiments
+(6)STI_forward.m: the function to generate the phase from the susceptibility tensor using STI forward model 
+(7)STI_recon.m: the script of STI reconstruction using aSTI+ method
+(8)stimap.m: the function to generate STI parametric descriptions from the calculated asymmetric susceptibility tenssor
 
 # Preparations before aSTI+ reconstruction
 1. Extract the brain mask, white matter mask and CSF mask from magnitude images using FSL Bet and FAST;
@@ -18,6 +23,6 @@ This repository contains implementations of Fc-aSTI model for simulated data and
 3. Coregister the magnitude images acquired at the first echo of different orientations to the magnitude image acquired at normal supine head position using FSL FLIRT, and obtain the vector of measured field shifts and the unit vectors of applied magnetic field strength in the subject frame of reference.
 4. Reconstruct QSM image using STAR-QSM using STI_Suite V3.0 toolbox and derive the smoothed QSM through Gaussian smooth. The discrete gradient was obtained from the smoothed QSM image and the morphology mask was derived by thresholding.
 
-Once the above steps are completed, you can run STIrecon.m function
+Once the above steps are completed, you can run STIrecon.m script to reconstruct susceptibility tensor
 
 # Simulation experiments
