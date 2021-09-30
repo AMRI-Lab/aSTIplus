@@ -7,7 +7,7 @@ This repository contains implementations of Fc-aSTI model for simulated data and
 
 # File Descriptions
 1. simulation_data: this folder constains the ground truth of simulation experiments.
-2. utils: this folder contains the source code to reconstruct aSTI+ model. including:
+2. utils: this folder contains the source code to reconstruct aSTI+ model. including:  
 (1) aSTIplus.m: the function of the aSTI+ model;  
 (2) compute_metrics.m: the function to calculate quantitative evaluation metrics including PSNR, SSIM in MSA and MMS as well as mean angular error in white matter;  
 (3) gradient_mask_all.m: the function to generate the morpology mask;  
@@ -26,3 +26,5 @@ This repository contains implementations of Fc-aSTI model for simulated data and
 Once the above steps are completed, you can run STIrecon.m script to reconstruct susceptibility tensor
 
 # Simulation experiments
+you can run simulation_demo.m script to conduct simulation experiments, including:  
+(1)generate simualted phase data with different noise level; (2)calculate the morphology mask from the smoothed QSM image; (3)reconstruct STI using aSTI+ method; (4)calculate quantitative metrics.
