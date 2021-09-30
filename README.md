@@ -8,7 +8,7 @@ This repository contains implementations of Fc-aSTI model for simulated data and
 # Required Dependencies
 1. [STI_Suite V3.0 toolbox](https://people.eecs.berkeley.edu/~chunlei.liu/software.html)
 2. Nifti toolbox
-3. FSL software
+3. [FSL software](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/)
 
 # File Descriptions
 1. simulation_data: this folder constains the ground truth of simulation experiments.
