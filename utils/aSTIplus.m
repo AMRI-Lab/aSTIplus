@@ -84,7 +84,7 @@ a33_array(isnan(a33_array)) = 0;
 clear KHdKSq KSq KX_Grid KY_Grid KZ_Grid 
 % ---------------------------------------------------------------
 
-disp('solving Susceptibility Tensor Imaging (STI) with MMSR-STI ...')
+disp('solving Susceptibility Tensor Imaging (STI) with aSTI+ ...')
 
 tic
 [chi_tensor, flag, relres, iter, resvec] = lsqr(@afun,b,tol,maxit);
